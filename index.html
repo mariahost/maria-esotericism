@@ -237,63 +237,7 @@
             }
         });
     </script>
-    <div class="modal-video">
-        <div class="modal-video__video">
-            <video src="gggg.mp4" controls playsinline></video>
-        </div>
-        <a href="https://api.whatsapp.com/send?phone=79189822720" class="modal-video__btn">
-            Написать Марии
-        </a>
-        <div class="modal-video__shadow">
-
-        </div>
-        <div class="modal-video__close">
-            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
-                class="GetReviewWidget__sc-3na4lx-0 ezrjXv">
-                <circle cx="24" cy="24" r="24" fill="black" fill-opacity="0.3"></circle>
-                <rect x="17" y="30" width="18" height="2" rx="1" transform="rotate(-45 17 30)" fill="white"></rect>
-                <rect width="18" height="2" rx="1" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 31 30)"
-                    fill="white"></rect>
-            </svg>
-        </div>
-    </div>
-    <script>
-        /*         let videos = document.querySelectorAll('.reviews-video');
-                let videosBtns = document.querySelectorAll('.reviews__play');
-                for (let i = 0; i < videosBtns.length; i++) {
-                    videosBtns[i].addEventListener('click', () => {
-                                        videos[i].setAttribute('controls', ''); 
-                        videos[i].postMessage('{"event": "command", "func": "playVideo", "args": ""}', "*");
-                        videosBtns[i].classList.add('active');
-                    });
-                }; */
-        document.querySelector('.modal-video').addEventListener('click', () => {
-            if (document.querySelector('.modal-video').classList.contains('active') == false) {
-                console.log(document.querySelector('.modal-video').classList.contains('active'));
-                console.log(1);
-                document.querySelector('.modal-video').classList.add('active');
-                document.querySelector('.modal-video__shadow').classList.add('active');
-                document.querySelector('.modal-video__close').classList.add('active');
-                document.querySelector('.modal-video__video > video').play();
-                setTimeout(() => {
-                    document.querySelector('.modal-video__btn').classList.add('active');
-                }, 27000);
-            }
-        });
-        document.querySelector('.modal-video__close').addEventListener('click', () => {
-            setTimeout(() => {
-                document.querySelector('.modal-video').classList.remove('active');
-                document.querySelector('.modal-video__shadow').classList.remove('active');
-                document.querySelector('.modal-video__btn').classList.remove('active');
-                document.querySelector('.modal-video__close').classList.remove('active');
-                document.querySelector('.modal-video__video > video').pause();
-            }, 100);
-        });
-        setTimeout(() => {
-            document.querySelector('.modal-video').classList.add('block');
-        }, 5000);
-        /* 300000 */
-    </script>
+ 
 </body>
 
 </html>
