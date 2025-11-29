@@ -1090,3 +1090,85 @@ justify-content: center;
     margin: 0 auto;
   }
 }
+/* Стили для иконки Telegram */
+.pulse3 a {
+    animation: pulse3 2s infinite;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    background: #0088cc;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.pulse3 a:hover {
+    background: #006699;
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.pulse3 a img {
+    width: 22px;
+    height: auto;
+    margin-right: 6px;
+}
+
+.pulse3:hover {
+    animation: none;
+}
+
+@-webkit-keyframes pulse3 {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 136, 204, 0.8);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(0, 136, 204, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(0, 136, 204, 0);
+    }
+}
+
+@keyframes pulse3 {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(0, 136, 204, 0.8);
+        box-shadow: 0 0 0 0 rgba(0, 136, 204, 0.8);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(0, 136, 204, 0);
+        box-shadow: 0 0 0 10px rgba(0, 136, 204, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(0, 136, 204, 0);
+        box-shadow: 0 0 0 0 rgba(0, 136, 204, 0);
+    }
+}
+
+/* Адаптация для мобильных устройств */
+@media screen and (max-width: 968px) {
+    .header ul li:nth-child(7) {
+        width: 50%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 14px;
+        padding-left: 0;
+    }
+    
+    .header ul li:nth-child(7) a {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 598px) {
+    .header ul li:nth-child(7) a {
+        font-size: 12px;
+    }
+    
+    .header ul li:nth-child(7) a img {
+        width: 16px;
+    }
+}
