@@ -1090,30 +1090,32 @@ justify-content: center;
     margin: 0 auto;
   }
 }
-/* Стили для иконки Telegram */
 .pulse3 a {
     animation: pulse3 2s infinite;
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #fff;
+    color: #0088cc !important; /* синий текст */
     font-weight: bold;
-    padding: 10px 15px;
-    background: #0088cc;
+    padding: 8px 12px;
+    background: transparent !important; /* прозрачный фон */
     border-radius: 25px;
     transition: all 0.3s ease;
+    border: 1px solid #0088cc; /* синяя рамка */
 }
 
 .pulse3 a:hover {
-    background: #006699;
+    background: #0088cc !important; /* синий фон при наведении */
+    color: #fff !important; /* белый текст при наведении */
     transform: scale(1.05);
     text-decoration: none;
 }
 
 .pulse3 a img {
-    width: 22px;
+    width: 20px;
     height: auto;
     margin-right: 6px;
+}
 }
 
 .pulse3:hover {
