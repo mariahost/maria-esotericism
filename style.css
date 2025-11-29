@@ -1172,3 +1172,15 @@ justify-content: center;
         width: 16px;
     }
 }
+/* Исправление для мобильной версии с Telegram */
+@media screen and (max-width: 968px) {
+    .header ul li:nth-child(5),
+    .header ul li:nth-child(6),
+    .header ul li:nth-child(7) {
+        width: 33.33%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 14px;
+        padding: 0 10px;
+    }
