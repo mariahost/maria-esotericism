@@ -1090,23 +1090,24 @@ justify-content: center;
     margin: 0 auto;
   }
 }
+/* Стили для иконки Telegram */
 .pulse3 a {
     animation: pulse3 2s infinite;
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #0088cc !important; /* синий текст */
+    color: #0088cc !important;
     font-weight: bold;
     padding: 8px 12px;
-    background: transparent !important; /* прозрачный фон */
+    background: transparent !important;
     border-radius: 25px;
     transition: all 0.3s ease;
-    border: 1px solid #0088cc; /* синяя рамка */
+    border: 1px solid #0088cc;
 }
 
 .pulse3 a:hover {
-    background: #0088cc !important; /* синий фон при наведении */
-    color: #fff !important; /* белый текст при наведении */
+    background: #0088cc !important;
+    color: #fff !important;
     transform: scale(1.05);
     text-decoration: none;
 }
@@ -1115,7 +1116,6 @@ justify-content: center;
     width: 20px;
     height: auto;
     margin-right: 6px;
-}
 }
 
 .pulse3:hover {
@@ -1149,32 +1149,7 @@ justify-content: center;
     }
 }
 
-/* Адаптация для мобильных устройств */
-@media screen and (max-width: 968px) {
-    .header ul li:nth-child(7) {
-        width: 50%;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        margin-top: 14px;
-        padding-left: 0;
-    }
-    
-    .header ul li:nth-child(7) a {
-        font-size: 22px;
-    }
-}
-
-@media screen and (max-width: 598px) {
-    .header ul li:nth-child(7) a {
-        font-size: 12px;
-    }
-    
-    .header ul li:nth-child(7) a img {
-        width: 16px;
-    }
-}
-/* Исправление для мобильной версии с Telegram */
+/* Компактные стили для контактов в шапке */
 @media screen and (max-width: 968px) {
     .header ul li:nth-child(5),
     .header ul li:nth-child(6),
@@ -1183,6 +1158,60 @@ justify-content: center;
         margin: 0;
         display: flex;
         justify-content: center;
-        margin-top: 14px;
-        padding: 0 10px;
+        margin-top: 10px;
+        padding: 0 5px;
     }
+    
+    .header ul li:nth-child(5) a,
+    .header ul li:nth-child(6) a,
+    .header ul li:nth-child(7) a {
+        font-size: 14px;
+        padding: 6px 10px;
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+    }
+    
+    .header ul li:nth-child(5) a img,
+    .header ul li:nth-child(6) a img,
+    .header ul li:nth-child(7) a img {
+        width: 20px;
+        height: 20px;
+        margin-right: 0;
+        margin-bottom: 2px;
+    }
+    
+    .header ul li:nth-child(5) a {
+        color: #ffd211 !important;
+    }
+    
+    .header ul li:nth-child(6) a {
+        color: #43d854 !important;
+    }
+    
+    .header ul li:nth-child(7) a {
+        color: #0088cc !important;
+    }
+    
+    .pulse a,
+    .pulse2 a,
+    .pulse3 a {
+        animation: none;
+    }
+}
+
+@media screen and (max-width: 598px) {
+    .header ul li:nth-child(5) a,
+    .header ul li:nth-child(6) a,
+    .header ul li:nth-child(7) a {
+        font-size: 11px;
+        padding: 4px 6px;
+    }
+    
+    .header ul li:nth-child(5) a img,
+    .header ul li:nth-child(6) a img,
+    .header ul li:nth-child(7) a img {
+        width: 16px;
+        height: 16px;
+    }
+}
