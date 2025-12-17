@@ -679,3 +679,33 @@ img{ max-width: 100%; display: block; }
 .modal__panel { position: relative; z-index: 2; }
 .modal__close { position: absolute; z-index: 3; }
 [hidden] { display: none !important; }
+.panel__photo{
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(0,0,0,0.25);
+  margin-bottom: 12px;
+}
+.panel__photo img{
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+.panel__badge{
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: rgba(10,8,16,0.62);
+  border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(10px);
+  font-weight: 700;
+  font-size: 13px;
+  color: rgba(255,255,255,0.92);
+}
+@media (max-width: 980px){
+  .panel__photo img{ height: 220px; }
+}
