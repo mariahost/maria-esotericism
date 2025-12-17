@@ -587,16 +587,24 @@
       }
 
       // Smooth scroll for anchors
-      document.addEventListener('click', function (e) {
-        const a = e.target.closest('a[href^="#"]');
-        if (!a) return;
-        const href = a.getAttribute('href');
-        if (!href || href === '#') return;
-        const el = document.querySelector(href);
-        if (!el) return;
-        e.preventDefault();
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
+     document.addEventListener('click', function (e) {
+  // ❗ НЕ трогаем клики внутри модалки
+  if (e.target.closest('.modal')) return;
+
+  const el = e.target.closest('[data-goal][data-action]');
+  if (!el) return;
+
+  const goal = el.getAttribute('data-goal');
+  const action = el.getAttribute('data-action');
+  const isBlank = el.getAttribute('target') === '_blank';
+
+  if (el.tagName.toLowerCase() === 'a') e.preventDefault();
+
+  safeYmReachGoal(goal, function () {
+    navigate(action, isBlank);
+  });
+}, true);
+
 
       // Goals + reliable navigation
       document.addEventListener('click', function (e) {
@@ -645,11 +653,12 @@
 
       // закрытие по клику на overlay или на крестик
 modal.addEventListener('click', (e) => {
-  const closeEl = e.target.closest(closeSelector);
-  if (closeEl) {
+  if (
+    e.target.classList.contains('modal__overlay') ||
+    e.target.classList.contains('modal__close')
+  ) {
     e.preventDefault();
     closeModal();
-    return;
   }
 });
 
