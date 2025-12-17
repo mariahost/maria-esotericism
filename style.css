@@ -678,3 +678,4 @@ img{ max-width: 100%; display: block; }
 .modal__overlay { z-index: 1; }
 .modal__panel { position: relative; z-index: 2; }
 .modal__close { position: absolute; z-index: 3; }
+[hidden] { display: none !important; }
