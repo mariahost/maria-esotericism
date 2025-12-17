@@ -626,47 +626,56 @@
         });
       }, true);
 
-      // Modal
-      const modal = document.getElementById('modal');
-      const openButtons = document.querySelectorAll('[data-open-modal="true"]');
-      const closeSelector = '[data-close-modal="true"]';
+      // ===== MODAL (ЖЕЛЕЗОБЕТОННЫЙ ВАРИАНТ) =====
+const modal = document.getElementById('modal');
+const openButtons = document.querySelectorAll('[data-open-modal="true"]');
 
-      function openModal() {
-        modal.hidden = false;
-        modal.setAttribute('aria-hidden', 'false');
-        document.documentElement.classList.add('no-scroll');
-        // small focus management
-        const closeBtn = modal.querySelector('.modal__close');
-        if (closeBtn) closeBtn.focus();
-      }
+const overlay = modal.querySelector('.modal__overlay');
+const closeBtn = modal.querySelector('.modal__close');
+const panel = modal.querySelector('.modal__panel');
 
-      function closeModal() {
-        modal.setAttribute('aria-hidden', 'true');
-        document.documentElement.classList.remove('no-scroll');
-        setTimeout(() => { modal.hidden = true; }, 120);
-      }
+function openModal() {
+  modal.hidden = false;
+  modal.setAttribute('aria-hidden', 'false');
+  document.documentElement.classList.add('no-scroll');
+  if (closeBtn) closeBtn.focus();
+}
 
-      openButtons.forEach(btn => btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        openModal();
-      }));
+function closeModal() {
+  modal.setAttribute('aria-hidden', 'true');
+  document.documentElement.classList.remove('no-scroll');
+  modal.hidden = true; // без таймера
+}
 
-      // закрытие по клику на overlay или на крестик
-modal.addEventListener('click', (e) => {
-  if (
-    e.target.classList.contains('modal__overlay') ||
-    e.target.classList.contains('modal__close')
-  ) {
+// открытие
+openButtons.forEach(btn => {
+  btn.addEventListener('click', (e) => {
     e.preventDefault();
-    closeModal();
-  }
+    openModal();
+  });
 });
 
-// запрет закрытия при клике внутри панели (чтобы не было странных кейсов)
-const panel = modal.querySelector('.modal__panel');
+// закрытие по крестику
+if (closeBtn) {
+  closeBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    closeModal();
+  });
+}
+
+// закрытие по фону
+if (overlay) {
+  overlay.addEventListener('click', (e) => {
+    e.preventDefault();
+    closeModal();
+  });
+}
+
+// клики внутри модалки НЕ закрывают
 if (panel) {
   panel.addEventListener('click', (e) => e.stopPropagation());
 }
+
 
 
       document.addEventListener('keydown', (e) => {
