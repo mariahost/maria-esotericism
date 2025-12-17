@@ -643,9 +643,22 @@
         openModal();
       }));
 
-      modal.addEventListener('click', (e) => {
-        if (e.target && e.target.closest(closeSelector)) closeModal();
-      });
+      // закрытие по клику на overlay или на крестик
+modal.addEventListener('click', (e) => {
+  const closeEl = e.target.closest(closeSelector);
+  if (closeEl) {
+    e.preventDefault();
+    closeModal();
+    return;
+  }
+});
+
+// запрет закрытия при клике внутри панели (чтобы не было странных кейсов)
+const panel = modal.querySelector('.modal__panel');
+if (panel) {
+  panel.addEventListener('click', (e) => e.stopPropagation());
+}
+
 
       document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && !modal.hidden) closeModal();
