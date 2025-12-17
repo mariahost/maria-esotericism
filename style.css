@@ -671,3 +671,10 @@ img{ max-width: 100%; display: block; }
   .mobile__cta{ grid-template-columns: 1fr; }
   .chip--phone{ display: none; }
 }
+/* фикс: hidden должен реально скрывать модалку, даже если задан display */
+[hidden] { display: none !important; }
+
+/* на всякий: слои модалки */
+.modal__overlay { z-index: 1; }
+.modal__panel { position: relative; z-index: 2; }
+.modal__close { position: absolute; z-index: 3; }
