@@ -1,341 +1,685 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17349943723"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'AW-17349943723');
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Мария — консультации и помощь в сложных жизненных ситуациях. Связь по телефону, WhatsApp или Telegram." />
+  <meta name="format-detection" content="telephone=yes" />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap">
-    <link rel="stylesheet" href="style.css">
-    <title>MariaOracul</title>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Inter:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="style.css" />
 
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function (m, e, t, r, i, k, a) {
-            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
-            m[i].l = 1 * new Date();
-            k = e.createElement(t);
-            a = e.getElementsByTagName(t)[0];
-            k.async = 1;
-            k.src = r;
-            a.parentNode.insertBefore(k, a);
-        })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+  <title>Мария — консультация и помощь</title>
 
-        ym(105560246, "init", {
-            clickmap: true,
-            trackLinks: true,
-            accurateTrackBounce: true,
-            webvisor: true
-        });
-    </script>
-    <noscript>
-        <div><img src="https://mc.yandex.ru/watch/105560246" style="position:absolute; left:-9999px;" alt="" /></div>
-    </noscript>
-    <!-- /Yandex.Metrika counter -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17349943723"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'AW-17349943723');
+  </script>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date();
+      k = e.createElement(t); a = e.getElementsByTagName(t)[0];
+      k.async = 1; k.src = r; a.parentNode.insertBefore(k, a);
+    })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(105560246, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/105560246" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
-<header class="header">
-    <div class="content">
-        <ul>
-            <li><a href="#services">Услуги</a></li>
-            <li><a href="#about">Обо мне</a></li>
-            <li><a href="#reviews">Отзывы</a></li>
-            <li><a href="#contacts">Контакты</a></li>
+  <a class="skip" href="#main">Перейти к содержимому</a>
 
-            <li class="pulse">
-                <a href="tel:79250605151"
-                   onclick="ym(105560246,'reachGoal','phone_click');">
-                    <img src="img/icon/phone.svg" alt="Телефон">+7 (925) 060-51-51
-                </a>
-            </li>
+  <header class="topbar" id="top">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top" aria-label="На главную">
+        <span class="brand__logo">М</span>
+        <span class="brand__text">
+          <span class="brand__name">Мария</span>
+          <span class="brand__tag">консультация и помощь</span>
+        </span>
+      </a>
 
-            <li class="pulse2">
-                <a href="https://api.whatsapp.com/send?phone=79250605151"
-                   target="_blank"
-                   onclick="ym(105560246,'reachGoal','whatsapp_click');">
-                    <img src="img/icon/whatsapp.png" alt="WhatsApp">Написать в WhatsApp
-                </a>
-            </li>
+      <nav class="nav" aria-label="Навигация">
+        <a class="nav__link" href="#services">Услуги</a>
+        <a class="nav__link" href="#how">Как проходит</a>
+        <a class="nav__link" href="#reviews">Отзывы</a>
+        <a class="nav__link" href="#faq">Вопросы</a>
+        <a class="nav__link" href="#contacts">Контакты</a>
+      </nav>
 
-            <li class="pulse3">
-                <a href="https://t.me/mariaMag123"
-                   target="_blank"
-                   onclick="ym(105560246,'reachGoal','telegram_click');">
-                    <img src="img/icon/telegram.svg" alt="Telegram">Написать в Telegram
-                </a>
-            </li>
-        </ul>
+      <div class="topbar__actions">
+        <a class="chip chip--phone" href="tel:+79250605151" data-goal="phone_click" data-action="tel:+79250605151">
+          <img src="img/icon/phone.svg" alt="" />
+          <span>+7 (925) 060-51-51</span>
+        </a>
+
+        <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
-</header>
 
-<section class="homescreen" id="homescreen">
-    <div class="content">
-        <div class="homescreen_name"><span>М</span>ария</div>
-        <h1>Потомственнае ясновидящая из рода Боулеште</h1>
-        <div class="button" madal="on">Обратиться за помощью</div>
-    </div>
-</section>
+    <div class="mobile" hidden>
+      <div class="container mobile__inner">
+        <a class="mobile__link" href="#services">Услуги</a>
+        <a class="mobile__link" href="#how">Как проходит</a>
+        <a class="mobile__link" href="#reviews">Отзывы</a>
+        <a class="mobile__link" href="#faq">Вопросы</a>
+        <a class="mobile__link" href="#contacts">Контакты</a>
 
-<section class="services" id="services">
-    <div class="content">
-        <div class="title">Мои услуги</div>
-        <div class="services_wrap">
-            <div class="services_block">
-                <div class="services_block_img" style="background-image: url(img/services/1.png);"></div>
-                <div class="services_block_title">Гадание на картах Таро</div>
-                <div class="services_block_link" madal="on">Обратится за помощью</div>
-            </div>
-            <div class="services_block">
-                <div class="services_block_img" style="background-image: url(img/services/2.png);"></div>
-                <div class="services_block_title">Приворот любимого</div>
-                <div class="services_block_link" madal="on">Обратится за помощью</div>
-            </div>
-            <div class="services_block">
-                <div class="services_block_img" style="background-image: url(img/services/3.png);"></div>
-                <div class="services_block_title">Вернуть мужа или жену</div>
-                <div class="services_block_link" madal="on">Обратится за помощью</div>
-            </div>
-            <div class="services_block">
-                <div class="services_block_img" style="background-image: url(img/services/4.png);"></div>
-                <div class="services_block_title">Устранить соперницу</div>
-                <div class="services_block_link" madal="on">Обратится за помощью</div>
-            </div>
-            <div class="services_block">
-                <div class="services_block_img" style="background-image: url(img/services/5.png);"></div>
-                <div class="services_block_title">Воссоединить семью</div>
-                <div class="services_block_link" madal="on">Обратится за помощью</div>
-            </div>
-            <div class="services_block">
-                <div class="services_block_img" style="background-image: url(img/services/6.png);"></div>
-                <div class="services_block_title">Снять венец безбрачия</div>
-                <div class="services_block_link" madal="on">Обратится за помощью</div>
-            </div>
-            <div class="services_block">
-                <div class="services_block_img" style="background-image: url(img/services/7.png);"></div>
-                <div class="services_block_title">Снять порчи и проклятия</div>
-                <div class="services_block_link" madal="on">Обратится за помощью</div>
-            </div>
-            <div class="services_block">
-                <div class="services_block_img" style="background-image: url(img/services/8.png);"></div>
-                <div class="services_block_title">Снятие сглаза</div>
-                <div class="services_block_link" madal="on">Обратится за помощью</div>
-            </div>
-            <div class="services_block">
-                <div class="services_block_img" style="background-image: url(img/services/9.png);"></div>
-                <div class="services_block_title">Магия на бизнес и деньги</div>
-                <div class="services_block_link" madal="on">Обратится за помощью</div>
-            </div>
+        <div class="mobile__cta">
+          <a class="btn btn--primary" href="tel:+79250605151" data-goal="phone_click" data-action="tel:+79250605151">
+            <img src="img/icon/phone.svg" alt="" />
+            Позвонить
+          </a>
+          <a class="btn btn--ghost" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=79250605151"
+             data-goal="whatsapp_click" data-action="https://api.whatsapp.com/send?phone=79250605151">
+            <img src="img/icon/whatsapp.png" alt="" />
+            WhatsApp
+          </a>
+          <a class="btn btn--ghost" target="_blank" rel="noopener" href="https://t.me/mariaMag123"
+             data-goal="telegram_click" data-action="https://t.me/mariaMag123">
+            <img src="img/icon/telegram.svg" alt="" />
+            Telegram
+          </a>
         </div>
+      </div>
     </div>
-</section>
+  </header>
 
-<section class="about" id="about">
-    <div class="content">
-        <div class="title">Обо мне</div>
-        <p class="about_description">
-            Меня зовут Марина, я – потомственная ясновидящая и гадалка, уже более 30-ти лет
-            прихожу на помощь людям. В моём роду было 10 поколений знахарей которые передавали силу магии, знаний и
-            обрядов из поколений в поколения. Моя сила, знания и опыт дают мне возможность оказывать помощь в
-            решении трудных ситуациях, неурядиц и проблем. Я никогда не обещаю того, что не могу выполнить. Я сразу
-            вижу, могу ли выполнить то, что хочет клиент, поэтому берусь за выполнение только тогда, когда уверена в
-            своих силах на 100%. Любые вопросы вы можете задать мне в удобное для вас время по телефону. И главное,
-            не терпите проблемы с любовью, здоровьем или бизнесом - меняйте свою жизнь к лучшему!
-        </p>
-        <div class="button" madal="on">Получить консультацию</div>
-    </div>
-</section>
+  <main id="main">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy reveal">
+          <p class="kicker">Личная консультация, без посредников</p>
+          <h1 class="h1">Потомственная ясновидящая. Помогаю пройти сложные жизненные ситуации спокойно и по шагам.</h1>
+          <p class="lead">
+            Формат простой: вы описываете ситуацию, я отвечаю честно — что реально возможно, какие действия уместны, что лучше не делать.
+            Связь удобным способом: звонок, WhatsApp или Telegram.
+          </p>
 
-<section class="call">
-    <div class="content">
-        <div class="call_title">
-            Я действительно помогаю людям достичь своих целей воссоединяю семьи и исполняю
-            желания <br> Вы можете мне доверять
-        </div>
-    </div>
-</section>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="tel:+79250605151" data-goal="phone_click" data-action="tel:+79250605151">
+              <img src="img/icon/phone.svg" alt="" />
+              Позвонить сейчас
+            </a>
 
-<section class="reviews" id="reviews">
-    <div class="content">
-        <div class="title">Отзывы</div>
-        <div class="reviews__videos">
-            <div class="reviews__video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0sXPqYIravU"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-            </div>
-            <div class="reviews__video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/pl0zAHcr8cM"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-            </div>
-            <div class="reviews__video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/IV76GuwXMSQ"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-            </div>
-        </div>
-        <div class="content_scroll">
-            <div class="reviews_wrap">
-                <div class="reviews_block">
-                    <div class="reviews_block_avatar" style="background-image: url(img/avatar/user1.png);"></div>
-                    <div class="reviews_block_name">Анастасия</div>
-                    <div class="reviews_block_text">
-                        Я позвонила Марии с бедой - муж бросил меня с двумя детьми!
-                        Младшему было всего полтора года. Это было отчаяние. Во-первых, я его очень люблю,
-                        во-вторых, я просто оказалась на краю жизненной пропасти с малыми на руках. Я умолялал ее
-                        вернуть мужа и она помогла мне. Мы снова вместе и снова счастливы! Спасибо Вам Мария!
-                    </div>
-                </div>
-                <div class="reviews_block">
-                    <div class="reviews_block_avatar" style="background-image: url(img/avatar/user2.png);"></div>
-                    <div class="reviews_block_name">Виктор</div>
-                    <div class="reviews_block_text">
-                        Мне было сложно найти хорошую ясновидящую. Попал к Марии по
-                        рекомендации. Очень сильно болел. Не могли определить причину. Оказалось - порча. Причем,
-                        многолетняя. Мария сняла весь негатив за 1 обряд!
-                    </div>
-                </div>
-                <div class="reviews_block">
-                    <div class="reviews_block_avatar" style="background-image: url(img/avatar/user3.png);"></div>
-                    <div class="reviews_block_name">Виктория</div>
-                    <div class="reviews_block_text">
-                        Делала у Марии приворот на любовь. До нее побывала у двух
-                        ясновидящих - ни одна не помогла. Здесь результат был уже буквально через несколько дней.
-                        Спасибо, Мария! Вы настоящий профессионал!
-                    </div>
-                </div>
-                <div class="reviews_block">
-                    <div class="reviews_block_avatar" style="background-image: url(img/avatar/user4.png);"></div>
-                    <div class="reviews_block_name">Екатерина</div>
-                    <div class="reviews_block_text">
-                        Развод грянул после двух лет брака. Но я не представляла жизни
-                        без своего мужа. Не могла его вернуть никакими усилиями. Марие же это удалось за один обряд!
-                        Не хватает слов выразить благодарность за добрые дела!
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+            <a class="btn btn--wa" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=79250605151"
+               data-goal="whatsapp_click" data-action="https://api.whatsapp.com/send?phone=79250605151">
+              <img src="img/icon/whatsapp.png" alt="" />
+              Самый быстрый способ: WhatsApp
+            </a>
 
-<section class="contacts" id="contacts">
-    <div class="content">
-        <div class="title">Контакты</div>
-        <div class="contacts_text">
-            Звоните либо пишите мне в WhatsApp или Telegram. Не бойтесь! Поделитесь своей проблемой!
-            Сделайте первый шаг к счастливой жизни, ведь Вы ее заслуживаете!
+            <a class="btn btn--tg" target="_blank" rel="noopener" href="https://t.me/mariaMag123"
+               data-goal="telegram_click" data-action="https://t.me/mariaMag123">
+              <img src="img/icon/telegram.svg" alt="" />
+              Telegram, если неудобно звонить
+            </a>
+          </div>
+
+          <div class="trustrow">
+            <div class="trustcard">
+              <div class="trustcard__title">30+ лет практики</div>
+              <div class="trustcard__text">Опыт, который снижает риск ошибок и “пустых обещаний”.</div>
+            </div>
+            <div class="trustcard">
+              <div class="trustcard__title">Честный ответ</div>
+              <div class="trustcard__text">Сразу говорю, если не берусь или если ожидания нереалистичны.</div>
+            </div>
+            <div class="trustcard">
+              <div class="trustcard__title">Конфиденциально</div>
+              <div class="trustcard__text">Без публикаций, без пересказов, без “третьих лиц”.</div>
+            </div>
+          </div>
         </div>
 
-        <a href="tel:79250605151"
-           class="contacts_link"
-           onclick="ym(105560246,'reachGoal','phone_click');">
-            <img src="img/icon/phone.svg" alt="Телефон">+7 (925) 060-51-51
-        </a>
+        <div class="hero__panel reveal">
+          <div class="panel">
+            <div class="panel__title">С чем чаще всего приходят</div>
+            <ul class="pilllist">
+              <li>отношения, семейные конфликты</li>
+              <li>тревога, ощущение тупика</li>
+              <li>деньги, работа, бизнес-решения</li>
+              <li>сложные выборы и “что делать дальше”</li>
+            </ul>
 
-        <a href="https://api.whatsapp.com/send?phone=79250605151"
-           target="_blank"
-           class="contacts_link contacts_link--whatsapp"
-           onclick="ym(105560246,'reachGoal','whatsapp_click');">
-            <img src="img/icon/whatsapp.png" alt="WhatsApp">Написать в WhatsApp
-        </a>
+            <div class="panel__note">
+              Если вы не уверены, подходит ли ваш вопрос — напишите одним сообщением, я отвечу, смогу ли помочь.
+            </div>
 
-        <a href="https://t.me/mariaMag123"
-           target="_blank"
-           class="contacts_link contacts_link--telegram"
-           onclick="ym(105560246,'reachGoal','telegram_click');">
-            <img src="img/icon/telegram.svg" alt="Telegram">Написать в Telegram
-        </a>
+            <div class="panel__actions">
+              <button class="btn btn--ghost" type="button" data-open-modal="true">
+                Открыть контакты
+              </button>
+            </div>
+          </div>
 
-        <a href="https://www.instagram.com/mari_orakul/"
-           target="_blank"
-           class="contacts_link">
-            <img src="img/icon/instagram.svg" alt="Instagram">Посетить Instagram
-        </a>
-    </div>
-</section>
+          <div class="glow" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
 
-<footer class="footer">
-    <div class="content">
-        © Мария – Потомственнае ясновидящая, 2025
-        <a href="#homescreen">Наверх &#8657;</a>
-    </div>
-</footer>
-
-<div class="modal">
-    <div class="modal_block">
-        <div class="modal_block_title">Получить помощь</div>
-        <div class="modal_block_text">
-            Чтобы получить помощь от меня позвоните, или напишите мне в WhatsApp или Telegram.
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2">Услуги</h2>
+          <p class="sublead">Выберите направление — и напишите, что происходит. Я подскажу формат консультации и первый шаг.</p>
         </div>
 
-        <a href="tel:79250605151"
-           class="modal_block_link"
-           onclick="ym(105560246,'reachGoal','phone_click');">
-            <img src="img/icon/phone.svg" alt="Телефон">+7 (925) 060-51-51
-        </a>
+        <div class="services reveal">
+          <article class="service">
+            <div class="service__img" style="background-image: url(img/services/1.png);"></div>
+            <div class="service__body">
+              <div class="service__title">Гадание на картах Таро</div>
+              <button class="linkbtn" type="button" data-open-modal="true">Обратиться за помощью</button>
+            </div>
+          </article>
 
-        <a href="https://api.whatsapp.com/send?phone=79250605151"
-           target="_blank"
-           class="modal_block_link"
-           onclick="ym(105560246,'reachGoal','whatsapp_click');">
-            <img src="img/icon/whatsapp.png" alt="WhatsApp">Написать в WhatsApp
-        </a>
+          <article class="service">
+            <div class="service__img" style="background-image: url(img/services/2.png);"></div>
+            <div class="service__body">
+              <div class="service__title">Приворот любимого</div>
+              <button class="linkbtn" type="button" data-open-modal="true">Обратиться за помощью</button>
+            </div>
+          </article>
 
-        <a href="https://t.me/mariaMag123"
-           target="_blank"
-           class="modal_block_link modal_block_link--telegram"
-           onclick="ym(105560246,'reachGoal','telegram_click');">
-            <img src="img/icon/telegram.svg" alt="Telegram">Написать в Telegram
-        </a>
+          <article class="service">
+            <div class="service__img" style="background-image: url(img/services/3.png);"></div>
+            <div class="service__body">
+              <div class="service__title">Вернуть мужа или жену</div>
+              <button class="linkbtn" type="button" data-open-modal="true">Обратиться за помощью</button>
+            </div>
+          </article>
 
-        <div class="modal_block_close"></div>
+          <article class="service">
+            <div class="service__img" style="background-image: url(img/services/4.png);"></div>
+            <div class="service__body">
+              <div class="service__title">Устранить соперницу</div>
+              <button class="linkbtn" type="button" data-open-modal="true">Обратиться за помощью</button>
+            </div>
+          </article>
+
+          <article class="service">
+            <div class="service__img" style="background-image: url(img/services/5.png);"></div>
+            <div class="service__body">
+              <div class="service__title">Воссоединить семью</div>
+              <button class="linkbtn" type="button" data-open-modal="true">Обратиться за помощью</button>
+            </div>
+          </article>
+
+          <article class="service">
+            <div class="service__img" style="background-image: url(img/services/6.png);"></div>
+            <div class="service__body">
+              <div class="service__title">Снять венец безбрачия</div>
+              <button class="linkbtn" type="button" data-open-modal="true">Обратиться за помощью</button>
+            </div>
+          </article>
+
+          <article class="service">
+            <div class="service__img" style="background-image: url(img/services/7.png);"></div>
+            <div class="service__body">
+              <div class="service__title">Снять порчи и проклятия</div>
+              <button class="linkbtn" type="button" data-open-modal="true">Обратиться за помощьью</button>
+            </div>
+          </article>
+
+          <article class="service">
+            <div class="service__img" style="background-image: url(img/services/8.png);"></div>
+            <div class="service__body">
+              <div class="service__title">Снятие сглаза</div>
+              <button class="linkbtn" type="button" data-open-modal="true">Обратиться за помощью</button>
+            </div>
+          </article>
+
+          <article class="service">
+            <div class="service__img" style="background-image: url(img/services/9.png);"></div>
+            <div class="service__body">
+              <div class="service__title">Магия на бизнес и деньги</div>
+              <button class="linkbtn" type="button" data-open-modal="true">Обратиться за помощью</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="ctaStrip reveal">
+          <div class="ctaStrip__text">
+            Не уверены, какая услуга подходит? Напишите одним сообщением — я подскажу направление и первый шаг.
+          </div>
+          <button class="btn btn--primary" type="button" data-open-modal="true">Связаться</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="how">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2">Как проходит консультация</h2>
+          <p class="sublead">Прозрачно и по делу: вы понимаете, что именно происходит на каждом шаге.</p>
+        </div>
+
+        <div class="steps reveal">
+          <div class="step">
+            <div class="step__num">1</div>
+            <div class="step__title">Вы пишете или звоните</div>
+            <div class="step__text">Коротко описываете ситуацию. Если неудобно говорить — лучше WhatsApp или Telegram.</div>
+          </div>
+          <div class="step">
+            <div class="step__num">2</div>
+            <div class="step__title">Я уточняю детали</div>
+            <div class="step__text">Задаю 2–5 вопросов, чтобы понимать контекст и не делать “общее гадание”.</div>
+          </div>
+          <div class="step">
+            <div class="step__num">3</div>
+            <div class="step__title">Даю честный ответ</div>
+            <div class="step__text">Что реально возможно, чего ожидать, какие действия уместны, какие — нет.</div>
+          </div>
+          <div class="step">
+            <div class="step__num">4</div>
+            <div class="step__title">Дальше — по ситуации</div>
+            <div class="step__text">Если нужна работа глубже — обсуждаем формат. Если нет — вы уходите с ясностью и планом.</div>
+          </div>
+        </div>
+
+        <div class="benefits reveal">
+          <div class="benefit">
+            <div class="benefit__title">Без лишних обещаний</div>
+            <div class="benefit__text">Если я не вижу результата — я так и скажу. Это честнее и безопаснее.</div>
+          </div>
+          <div class="benefit">
+            <div class="benefit__title">Минимум “тумана”</div>
+            <div class="benefit__text">Фокус на ситуации и решениях, а не на общих фразах и страхах.</div>
+          </div>
+          <div class="benefit">
+            <div class="benefit__title">Удобный контакт</div>
+            <div class="benefit__text">Телефон для срочного, мессенджеры — если хотите спокойно и письменно.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2">Отзывы</h2>
+          <p class="sublead">Часть отзывов — видео. Остальные — короткие истории клиентов.</p>
+        </div>
+
+        <div class="videoGrid reveal">
+          <div class="video">
+            <iframe src="https://www.youtube.com/embed/0sXPqYIravU" title="Отзыв 1" loading="lazy"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="video">
+            <iframe src="https://www.youtube.com/embed/pl0zAHcr8cM" title="Отзыв 2" loading="lazy"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="video">
+            <iframe src="https://www.youtube.com/embed/IV76GuwXMSQ" title="Отзыв 3" loading="lazy"
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="quotes reveal">
+          <article class="quote">
+            <div class="quote__head">
+              <div class="avatar" style="background-image: url(img/avatar/user1.png);"></div>
+              <div>
+                <div class="quote__name">Анастасия</div>
+                <div class="quote__meta">семья</div>
+              </div>
+            </div>
+            <div class="quote__text">
+              «Я позвонила Марии в отчаянии — муж ушёл, двое детей. Мария помогла разобраться, мы смогли сохранить семью».
+            </div>
+          </article>
+
+          <article class="quote">
+            <div class="quote__head">
+              <div class="avatar" style="background-image: url(img/avatar/user2.png);"></div>
+              <div>
+                <div class="quote__name">Виктор</div>
+                <div class="quote__meta">здоровье</div>
+              </div>
+            </div>
+            <div class="quote__text">
+              «Долго не могли понять причину состояния. После работы с Марией стало легче, ушла постоянная тревога».
+            </div>
+          </article>
+
+          <article class="quote">
+            <div class="quote__head">
+              <div class="avatar" style="background-image: url(img/avatar/user3.png);"></div>
+              <div>
+                <div class="quote__name">Виктория</div>
+                <div class="quote__meta">отношения</div>
+              </div>
+            </div>
+            <div class="quote__text">
+              «Важно, что Мария говорит прямо и без давления. После консультации появилась ясность, что делать дальше».
+            </div>
+          </article>
+
+          <article class="quote">
+            <div class="quote__head">
+              <div class="avatar" style="background-image: url(img/avatar/user4.png);"></div>
+              <div>
+                <div class="quote__name">Екатерина</div>
+                <div class="quote__meta">семья</div>
+              </div>
+            </div>
+            <div class="quote__text">
+              «Я не верила, что можно что-то изменить. После консультации мы смогли выйти из тупика и договориться».
+            </div>
+          </article>
+        </div>
+
+        <div class="center reveal">
+          <button class="btn btn--primary" type="button" data-open-modal="true">Хочу консультацию</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="faq">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2">Частые вопросы</h2>
+          <p class="sublead">Чтобы вы понимали формат и не сомневались, что делать дальше.</p>
+        </div>
+
+        <div class="faq reveal">
+          <details class="faq__item">
+            <summary>Мне страшно начинать. Что писать?</summary>
+            <div class="faq__content">
+              Напишите 3–5 предложений: что произошло, чего вы боитесь, что хотите получить. Можно без деталей — я уточню.
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Можно ли анонимно?</summary>
+            <div class="faq__content">
+              Да. Можно без имени и без фото. Важно только описание ситуации.
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Сколько времени занимает консультация?</summary>
+            <div class="faq__content">
+              По ситуации. Иногда достаточно короткого разговора, иногда нужно глубже — обсуждаем отдельно.
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Если вы не сможете помочь?</summary>
+            <div class="faq__content">
+              Я скажу об этом прямо, чтобы вы не тратили время и деньги.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacts">
+      <div class="container">
+        <div class="contactCard reveal">
+          <div class="contactCard__left">
+            <h2 class="h2">Контакты</h2>
+            <p class="sublead">
+              Выбирайте удобный канал. Если срочно — лучше звонок. Если хотите спокойно и письменно — WhatsApp или Telegram.
+            </p>
+
+            <div class="contactButtons">
+              <a class="btn btn--primary" href="tel:+79250605151" data-goal="phone_click" data-action="tel:+79250605151">
+                <img src="img/icon/phone.svg" alt="" />
+                Позвонить
+              </a>
+
+              <a class="btn btn--wa" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=79250605151"
+                 data-goal="whatsapp_click" data-action="https://api.whatsapp.com/send?phone=79250605151">
+                <img src="img/icon/whatsapp.png" alt="" />
+                WhatsApp
+              </a>
+
+              <a class="btn btn--tg" target="_blank" rel="noopener" href="https://t.me/mariaMag123"
+                 data-goal="telegram_click" data-action="https://t.me/mariaMag123">
+                <img src="img/icon/telegram.svg" alt="" />
+                Telegram
+              </a>
+
+              <a class="btn btn--ghost" target="_blank" rel="noopener" href="https://www.instagram.com/mari_orakul/">
+                <img src="img/icon/instagram.svg" alt="" />
+                Instagram
+              </a>
+            </div>
+
+            <div class="fineprint">
+              Нажимая на кнопки связи, вы переходите в приложение/мессенджер. Конфиденциальность соблюдается.
+            </div>
+          </div>
+
+          <div class="contactCard__right">
+            <div class="mini">
+              <div class="mini__title">Быстрое сообщение</div>
+              <div class="mini__text">Напишите: “Ситуация такая-то, хочу понять, что делать”. Я отвечу, смогу ли помочь.</div>
+              <button class="btn btn--primary" type="button" data-open-modal="true">Открыть контакты</button>
+            </div>
+
+            <div class="mini mini--soft">
+              <div class="mini__title">Важно</div>
+              <div class="mini__text">Я не навязываю и не давлю. Если нужно — получите консультацию. Если нет — просто закроем вопрос.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>© Мария — потомственная ясновидящая, 2025</div>
+      <a class="footer__link" href="#top">Наверх</a>
     </div>
-</div>
+  </footer>
 
-<script>
-    $("a[href^='#']").click(function () {
-        var _href = $(this).attr("href");
-        $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
-        return false;
-    });
+  <!-- Sticky bottom CTA (mobile) -->
+  <div class="sticky" aria-label="Быстрые контакты">
+    <a class="sticky__btn" href="tel:+79250605151" data-goal="phone_click" data-action="tel:+79250605151">
+      <img src="img/icon/phone.svg" alt="" />
+      <span>Позвонить</span>
+    </a>
+    <a class="sticky__btn" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=79250605151"
+       data-goal="whatsapp_click" data-action="https://api.whatsapp.com/send?phone=79250605151">
+      <img src="img/icon/whatsapp.png" alt="" />
+      <span>WhatsApp</span>
+    </a>
+    <a class="sticky__btn" target="_blank" rel="noopener" href="https://t.me/mariaMag123"
+       data-goal="telegram_click" data-action="https://t.me/mariaMag123">
+      <img src="img/icon/telegram.svg" alt="" />
+      <span>Telegram</span>
+    </a>
+  </div>
 
-    $("[madal|='on']").click(function () {
-        $('.modal').fadeIn().css("display", "flex");
-        return false;
-    });
+  <!-- Modal contacts -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-label="Контакты" hidden>
+    <div class="modal__overlay" data-close-modal="true"></div>
+    <div class="modal__panel" role="document">
+      <button class="modal__close" type="button" aria-label="Закрыть" data-close-modal="true">✕</button>
+      <div class="modal__title">Связаться</div>
+      <div class="modal__text">
+        Выберите удобный способ. Если срочно — лучше звонок. Если неудобно говорить — WhatsApp или Telegram.
+      </div>
 
-    $(".modal_block_close").click(function () {
-        $(this).parents(".modal").fadeOut();
-        return false;
-    });
+      <div class="modal__actions">
+        <a class="btn btn--primary" href="tel:+79250605151" data-goal="phone_click" data-action="tel:+79250605151">
+          <img src="img/icon/phone.svg" alt="" />
+          Позвонить
+        </a>
 
-    $(document).keydown(function (e) {
-        if (e.keyCode === 27) {
-            e.stopPropagation();
-            $('.modal').fadeOut();
+        <a class="btn btn--wa" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=79250605151"
+           data-goal="whatsapp_click" data-action="https://api.whatsapp.com/send?phone=79250605151">
+          <img src="img/icon/whatsapp.png" alt="" />
+          WhatsApp
+        </a>
+
+        <a class="btn btn--tg" target="_blank" rel="noopener" href="https://t.me/mariaMag123"
+           data-goal="telegram_click" data-action="https://t.me/mariaMag123">
+          <img src="img/icon/telegram.svg" alt="" />
+          Telegram
+        </a>
+      </div>
+
+      <div class="modal__hint">
+        Если вы нажали на кнопку и сразу ушли в приложение — цель в Метрике фиксируется надёжно (переход происходит после отправки события).
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const METRIKA_ID = 105560246;
+
+      function safeYmReachGoal(goal, done) {
+        try {
+          if (typeof ym === 'function') {
+            ym(METRIKA_ID, 'reachGoal', goal, {}, function () {
+              if (typeof done === 'function') done();
+            });
+            // страховка: если callback не вызвался
+            setTimeout(() => { if (typeof done === 'function') done(); }, 450);
+          } else {
+            if (typeof done === 'function') done();
+          }
+        } catch (e) {
+          if (typeof done === 'function') done();
         }
-    });
+      }
 
-    $('.modal').click(function (e) {
-        if ($(e.target).closest('.modal_block').length === 0) {
-            $(this).fadeOut();
+      function navigate(action, isBlank) {
+        if (!action) return;
+        if (action.startsWith('tel:')) {
+          window.location.href = action;
+          return;
         }
-    });
-</script>
+        if (isBlank) {
+          window.open(action, '_blank', 'noopener');
+        } else {
+          window.location.href = action;
+        }
+      }
 
+      // Smooth scroll for anchors
+      document.addEventListener('click', function (e) {
+        const a = e.target.closest('a[href^="#"]');
+        if (!a) return;
+        const href = a.getAttribute('href');
+        if (!href || href === '#') return;
+        const el = document.querySelector(href);
+        if (!el) return;
+        e.preventDefault();
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+
+      // Goals + reliable navigation
+      document.addEventListener('click', function (e) {
+        const el = e.target.closest('[data-goal][data-action]');
+        if (!el) return;
+
+        const goal = el.getAttribute('data-goal');
+        const action = el.getAttribute('data-action');
+        const isBlank = el.getAttribute('target') === '_blank';
+
+        // prevent default navigation to ensure goal delivery
+        if (el.tagName.toLowerCase() === 'a') e.preventDefault();
+
+        safeYmReachGoal(goal, function () {
+          // optional: send to Google Ads conversion event here if you decide later
+          // gtag('event', 'conversion', { 'send_to': 'AW-XXXX/label' });
+
+          navigate(action, isBlank);
+        });
+      }, true);
+
+      // Modal
+      const modal = document.getElementById('modal');
+      const openButtons = document.querySelectorAll('[data-open-modal="true"]');
+      const closeSelector = '[data-close-modal="true"]';
+
+      function openModal() {
+        modal.hidden = false;
+        modal.setAttribute('aria-hidden', 'false');
+        document.documentElement.classList.add('no-scroll');
+        // small focus management
+        const closeBtn = modal.querySelector('.modal__close');
+        if (closeBtn) closeBtn.focus();
+      }
+
+      function closeModal() {
+        modal.setAttribute('aria-hidden', 'true');
+        document.documentElement.classList.remove('no-scroll');
+        setTimeout(() => { modal.hidden = true; }, 120);
+      }
+
+      openButtons.forEach(btn => btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openModal();
+      }));
+
+      modal.addEventListener('click', (e) => {
+        if (e.target && e.target.closest(closeSelector)) closeModal();
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.hidden) closeModal();
+      });
+
+      // Mobile menu
+      const burger = document.querySelector('.burger');
+      const mobile = document.querySelector('.mobile');
+      function closeMobile() {
+        burger.setAttribute('aria-expanded', 'false');
+        mobile.hidden = true;
+      }
+      function toggleMobile() {
+        const expanded = burger.getAttribute('aria-expanded') === 'true';
+        burger.setAttribute('aria-expanded', String(!expanded));
+        mobile.hidden = expanded;
+      }
+      burger.addEventListener('click', toggleMobile);
+      document.addEventListener('click', (e) => {
+        if (!mobile || mobile.hidden) return;
+        const inside = e.target.closest('.mobile') || e.target.closest('.burger');
+        if (!inside) closeMobile();
+      });
+      mobile.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMobile));
+
+      // Reveal on scroll
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add('is-visible');
+        });
+      }, { threshold: 0.12 });
+
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    })();
+  </script>
 </body>
 </html>
